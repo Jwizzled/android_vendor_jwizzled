@@ -27,6 +27,17 @@ PRODUCT_PACKAGES += \
     Torch \
     VoicePlus
 
+# Cyanogenmod superuser support
+SUPERUSER_EMBEDDED := true
+SUPERUSER_PACKAGE_PREFIX := com.android.settings.cyanogenmod.superuser
+
+PRODUCT_PACKAGES += \
+    Superuser \
+    su
+
+PRODUCT_PROPERTY_OVERRIDES += \
+    persist.sys.root_access=3
+
 # Proprietary latinime lib needed for swyping
 PRODUCT_COPY_FILES += \
     $(LOCAL_PATH)/lib/libjni_latinime.so:system/lib/libjni_latinime.so

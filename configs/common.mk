@@ -24,8 +24,7 @@ PRODUCT_PACKAGE_OVERLAYS += vendor/banks/overlays/common
 PRODUCT_PACKAGES += \
     Launcher3 \
     Stk \
-    Torch \
-    VoicePlus
+    Torch
 
 # Cyanogenmod superuser support
 SUPERUSER_EMBEDDED := true

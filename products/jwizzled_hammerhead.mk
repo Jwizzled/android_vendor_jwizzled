@@ -2,7 +2,7 @@
 $(call inherit-product, device/lge/hammerhead/full_hammerhead.mk)
 
 # Inherit common product files.
-$(call inherit-product, vendor/banks/configs/common.mk)
+$(call inherit-product, vendor/jwizzled/configs/common.mk)
 
 # Setup device specific product configuration.
 PRODUCT_NAME := jwizzled_hammerhead
